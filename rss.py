@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """PyRSS2Gen - A Python library for generating RSS 2.0 feeds."""
 
 __name__ = "PyRSS2Gen"
