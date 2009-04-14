@@ -9,7 +9,8 @@ _generator_name = __name__ + "-" + ".".join(map(str, __version__))
 
 import datetime
 import wsgiref.handlers
-  
+import urllib
+
 from google.appengine.ext import webapp
 
 
@@ -457,17 +458,35 @@ class GmpRSSHandler(webapp.RequestHandler):
                 language = 'ko',
 
                 lastBuildDate = datetime.datetime.now())
-       
-        rss.items.append(RSSItem(title = "굿모닝팝스 4월 3일",
-            link = "http://cast.danpod.com/gmp/index.php/post/1053",
-            description = "<![CDATA[ 굿모닝팝스 4월 3일 방송분입니다. ]]>",
-            #categories = ["gmp"],
-            author = "test@kbs.co.kr",
-            guid = Guid(guid = "http://cast.danpod.com/gmp/index.php/post/1053"),
-            enclosure = Enclosure( url = "http://danpod.nefficient.co.kr/danpod/mp3/2fm/gmp_20090403_down.mp3",
-                                   length = 1213952,
-                                   type = "audio/mpeg" )
-            ))
+      
+        today = datetime.date.today()
+        
+        for i in range(15):
+            d = today - datetime.timedelta(i);
+
+            _title = d.strftime("굿모닝 팝스 %m월 %d일")
+            _desc = d.strftime("<![CDATA[ 굿모닝팝스 %m월 %d일 방송분입니다. ]]>")
+            _pubDate = datetime.datetime(d.year,d.month,d.day,0,0,0,0)
+            _guid = d.strftime("http://www.kbs.co.kr/radio/coolfm/gmp/?%Y%m%d")
+            _mp3url = d.strftime("http://danpod.nefficient.co.kr/danpod/mp3/2fm/gmp_%Y%m%d_down.mp3");
+            _mp3size = 12139521
+
+            #_mp3file = urllib.urlopen(_mp3url)
+            #if _mp3file != None:
+            #    info = _mp3file.info()
+            #    _mp3size = int(info.getparam('Contect-length'))
+
+            rss.items.append(RSSItem(title = _title,
+                link = "http://www.kbs.co.kr/radio/coolfm/gmp/",
+                description = _desc,
+                #categories = ["gmp"],
+                author = "test@kbs.co.kr",
+                guid = Guid(guid = _guid),
+                pubDate = _pubDate,
+                enclosure = Enclosure( url = _mp3url,
+                                    length = _mp3size,
+                                    type = "audio/mpeg" )
+                ))
 
         self.response.headers['Content-Type'] = 'text/xml'
         self.response.out.write( rss.to_xml(encoding = 'UTF-8') );
