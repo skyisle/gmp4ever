@@ -464,7 +464,7 @@ class GmpRSSHandler(webapp.RequestHandler):
             #categories = ["gmp"],
             author = "test@kbs.co.kr",
             guid = Guid(guid = "http://cast.danpod.com/gmp/index.php/post/1053"),
-            enclosure = Enclosure( url = "http://data.danpod.com/cast/gmp/media/20090402/gmp090403.mp3",
+            enclosure = Enclosure( url = "http://danpod.nefficient.co.kr/danpod/mp3/2fm/gmp_20090403_down.mp3",
                                    length = 1213952,
                                    type = "audio/mpeg" )
             ))
