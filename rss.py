@@ -10,6 +10,7 @@ _generator_name = __name__ + "-" + ".".join(map(str, __version__))
 import datetime
 import wsgiref.handlers
 import urllib
+import logging
 
 from google.appengine.ext import webapp
 
@@ -465,11 +466,13 @@ class GmpRSSHandler(webapp.RequestHandler):
             d = today - datetime.timedelta(i);
 
             _title = d.strftime("굿모닝 팝스 %m월 %d일")
-            _desc = d.strftime("<![CDATA[ 굿모닝팝스 %m월 %d일 방송분입니다. ]]>")
+            _desc = d.strftime("굿모닝팝스 %m월 %d일 방송분입니다.")
             _pubDate = datetime.datetime(d.year,d.month,d.day,0,0,0,0)
             _guid = d.strftime("http://www.kbs.co.kr/radio/coolfm/gmp/?%Y%m%d")
             _mp3url = d.strftime("http://danpod.nefficient.co.kr/danpod/mp3/2fm/gmp_%Y%m%d_down.mp3");
-            _mp3size = 12139521
+            _mp3size = 32139521
+            
+            logging.info(_desc);
 
             #_mp3file = urllib.urlopen(_mp3url)
             #if _mp3file != None:
