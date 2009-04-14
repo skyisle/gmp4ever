@@ -457,7 +457,6 @@ class GmpRSSHandler(webapp.RequestHandler):
                 description = "신나는 아침, 풍성한 아침, 영어의 해결사 굿모닝 팝스가 책임집니다."
                               "KBS cool FM",
                 language = 'ko',
-
                 lastBuildDate = datetime.datetime.now())
       
         today = datetime.date.today()
@@ -472,7 +471,7 @@ class GmpRSSHandler(webapp.RequestHandler):
             _mp3url = d.strftime("http://danpod.nefficient.co.kr/danpod/mp3/2fm/gmp_%Y%m%d_down.mp3");
             _mp3size = 32139521
             
-            logging.info(_desc);
+            #logging.info(_desc);
 
             #_mp3file = urllib.urlopen(_mp3url)
             #if _mp3file != None:
@@ -494,12 +493,16 @@ class GmpRSSHandler(webapp.RequestHandler):
         self.response.headers['Content-Type'] = 'text/xml'
         self.response.out.write( rss.to_xml(encoding = 'UTF-8') );
 
+class MainPageHandler(webapp.RequestHandler):
+    def get(self):
+        self.redirect("/rss")
+
 def main():
-    url_map = [('/', GmpRSSHandler)]
+    url_map = [('/',    MainPageHandler),
+               ('/rss', GmpRSSHandler)]
+
     application = webapp.WSGIApplication(url_map, debug=True)
     wsgiref.handlers.CGIHandler().run(application)
 
 if __name__ == '__main__':
     main()
-
-

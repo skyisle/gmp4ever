@@ -4,9 +4,8 @@ runtime: python
 api_version: 1
 
 handlers:
-- url: /.*
+- url: /rss.*
   script: rss.py
 
-- url: /.*
-  script: main.py
-
+- url: /BeautifulSoup.*
+  script: BeautifulSoup.py
