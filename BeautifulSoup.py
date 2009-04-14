@@ -1992,10 +1992,27 @@ class UnicodeDammit:
 
 #######################################################################
 
+import wsgiref.handlers
+from google.appengine.ext import webapp
+import urllib2
+
+class MainHandler(webapp.RequestHandler):
+    def get(self):
+        #html = "<br /><p>Para 1<p>Para 2<blockquote>Quote 1<blockquote>Quote 2"
+        #soup = BeautifulSoup(html)
+        #self.response.out.write(soup.prettify())
+        
+        gmpurl = "http://tune.kbs.co.kr/program/episode.php?pgNo=1&ch=04&page=1"
+        page = urllib2.urlopen(gmpurl)
+        soup = BeautifulSoup(page.read(),)
+        self.response.out.write(soup.prettify())
+
+def main():
+    application = webapp.WSGIApplication([('/BeautifulSoup', MainHandler)],
+                                       debug=True)
+    wsgiref.handlers.CGIHandler().run(application)
+
 
 #By default, act as an HTML pretty-printer.
 if __name__ == '__main__':
-    import sys
-    
-    soup = BeautifulSoup(sys.stdin)
-    print soup.prettify()
+    main()
