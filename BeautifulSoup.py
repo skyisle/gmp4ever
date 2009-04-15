@@ -2007,10 +2007,16 @@ class MainHandler(webapp.RequestHandler):
         content = page.read().decode("euc-kr")      
         content = content.replace("<<","&lt;&lt;")
         content = content.replace(">>","&gt;&gt;")
-        #self.response.headers['Content-Type'] = 'text/text'
+        self.response.headers['Content-Type'] = 'text/text'
         soup = BeautifulSoup(content)
+        for tr in soup('tr'):
+            self.response.out.write('########################')
+            self.response.out.write(tr)
+
+        episodes = soup.findAll(id=re.compile('^episode.*'))
+        subjects = soup.findAll(id=re.compile('^episode.*'))
         episode = soup.findAll(id=re.compile('^episode.*'))
-        self.response.out.write(episode[0])
+        #self.response.out.write(episode[0])
 
 def main():
     application = webapp.WSGIApplication([('/BeautifulSoup.*', MainHandler)],
