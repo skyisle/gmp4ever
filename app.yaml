@@ -4,12 +4,13 @@ runtime: python
 api_version: 1
 
 handlers:
-- url: /
+- url: /gmp\/rss\.xml
   static_files: gmprss.xml 
   upload: gmprss.xml
 
-- url: /rss.*
-  script: rss.py
-
 - url: /BeautifulSoup.*
   script: BeautifulSoup.py
+
+- url: /.*
+  script: rss.py
+

@@ -2004,11 +2004,16 @@ class MainHandler(webapp.RequestHandler):
         
         gmpurl = "http://tune.kbs.co.kr/program/episode.php?pgNo=1&ch=04&page=1"
         page = urllib2.urlopen(gmpurl)
-        soup = BeautifulSoup(page.read(),)
-        self.response.out.write(soup.prettify())
+        content = page.read().decode("euc-kr")      
+        content = content.replace("<<","&lt;&lt;")
+        content = content.replace(">>","&gt;&gt;")
+        #self.response.headers['Content-Type'] = 'text/text'
+        soup = BeautifulSoup(content)
+        episode = soup.findAll(id=re.compile('^episode.*'))
+        self.response.out.write(episode[0])
 
 def main():
-    application = webapp.WSGIApplication([('/BeautifulSoup', MainHandler)],
+    application = webapp.WSGIApplication([('/BeautifulSoup.*', MainHandler)],
                                        debug=True)
     wsgiref.handlers.CGIHandler().run(application)
 

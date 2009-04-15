@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """PyRSS2Gen - A Python library for generating RSS 2.0 feeds."""
 
-__name__ = "PyRSS2Gen"
+__name__pyrss = "PyRSS2Gen"
 __version__ = (1, 0, 0)
 __author__ = "Andrew Dalke <dalke@dalkescientific.com>"
 
-_generator_name = __name__ + "-" + ".".join(map(str, __version__))
+_generator_name = __name__pyrss + "-" + ".".join(map(str, __version__))
 
 import datetime
 import wsgiref.handlers
@@ -453,7 +453,7 @@ class GmpRSSHandler(webapp.RequestHandler):
     def get(self):
         rss = RSS2(
                 title = "굿모닝팝스",
-                link = "http://cast.danpod.com/gmp",
+                link = "http://www.kbs.co.kr/radio/coolfm/gmp",
                 description = "신나는 아침, 풍성한 아침, 영어의 해결사 굿모닝 팝스가 책임집니다."
                               "KBS cool FM",
                 language = 'ko',
@@ -464,8 +464,8 @@ class GmpRSSHandler(webapp.RequestHandler):
         for i in range(15):
             d = today - datetime.timedelta(i);
 
-            _title = d.strftime("굿모닝 팝스 %m월 %d일")
-            _desc = d.strftime("굿모닝팝스 %m월 %d일 방송분입니다.")
+            _title = "굿모닝 팝스 %d월 %d일" % (d.month, d.day)
+            _desc = "굿모닝팝스 %d월 %d일 방송분입니다." % (d.month, d.day)
             _pubDate = datetime.datetime(d.year,d.month,d.day,0,0,0,0)
             _guid = d.strftime("http://www.kbs.co.kr/radio/coolfm/gmp/?%Y%m%d")
             _mp3url = d.strftime("http://danpod.nefficient.co.kr/danpod/mp3/2fm/gmp_%Y%m%d_down.mp3");
@@ -494,10 +494,11 @@ class GmpRSSHandler(webapp.RequestHandler):
         self.response.out.write( rss.to_xml(encoding = 'UTF-8') );
 
 def main():
-    url_map = [('/rss.*', GmpRSSHandler)]
+    url_map = [('/.*', GmpRSSHandler)]
 
     application = webapp.WSGIApplication(url_map, debug=True)
     wsgiref.handlers.CGIHandler().run(application)
+
 
 if __name__ == '__main__':
     main()
