@@ -4,6 +4,10 @@ runtime: python
 api_version: 1
 
 handlers:
+- url: /
+  static_files: gmprss.xml 
+  upload: gmprss.xml
+
 - url: /rss.*
   script: rss.py
 

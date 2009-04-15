@@ -493,13 +493,8 @@ class GmpRSSHandler(webapp.RequestHandler):
         self.response.headers['Content-Type'] = 'text/xml'
         self.response.out.write( rss.to_xml(encoding = 'UTF-8') );
 
-class MainPageHandler(webapp.RequestHandler):
-    def get(self):
-        self.redirect("/rss")
-
 def main():
-    url_map = [('/',    MainPageHandler),
-               ('/rss', GmpRSSHandler)]
+    url_map = [('/rss.*', GmpRSSHandler)]
 
     application = webapp.WSGIApplication(url_map, debug=True)
     wsgiref.handlers.CGIHandler().run(application)

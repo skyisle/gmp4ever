@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/DTDs/Podcast-1.0.dtd" xmlns:tavipod="tavipod_v1.0">
+<channel>
+    <itunes:new-feed-url>http://feeds2.feedburner.com/gmp4ever</itunes:new-feed-url>    
+<tavipod:churl>http://danpod.com/service/pod_channel.php?cast=cast&amp;id=gmp</tavipod:churl>
+<title>굿모닝팝스</title>
+<link>http://cast.danpod.com/gmp</link>
+<description>신나는 아침, 풍성한 아침, 영어의 해결사 굿모닝 팝스가 책임집니다.
+KBS cool FM</description>
+<language>ko</language>
+<pubDate>Thu, 02 Apr 2009 18:37:02 +0900</pubDate>
+<generator>DanPOD (http://www.danpod.com)</generator>
+<managingEditor>test@kbs.co.kr</managingEditor>
+<copyright>Copyright 2009 굿모닝팝스</copyright>
+<docs>http://cast.danpod.com/gmp/rss.xml</docs>
+<category>교육/강좌</category>
+<image>
+<url>http://cast.danpod.com/gmp/gmp_01.jpg</url>
+<title>굿모닝팝스</title>
+<link>http://cast.danpod.com/gmp</link>
+</image>
+<managingEditor>test@kbs.co.kr</managingEditor>
+<tavipod:djay>이근철</tavipod:djay>
+<tavipod:djay>John Valentine</tavipod:djay>
+<tavipod:writer>최호환</tavipod:writer>
+<tavipod:writer>강혜정</tavipod:writer>
+<tavipod:producer>박용훈</tavipod:producer>
+<itunes:subtitle>굿모닝팝스</itunes:subtitle>
+<itunes:summary>신나는 아침, 풍성한 아침, 영어의 해결사 굿모닝 팝스가 책임집니다.
+KBS cool FM</itunes:summary>
+<itunes:owner>
+<itunes:email>test@kbs.co.kr</itunes:email>
+<itunes:name>굿모닝팝스</itunes:name>
+</itunes:owner>
+<itunes:image href="http://cast.danpod.com/gmp/gmp_01.jpg" />
+<item>
+<title>굿모닝팝스 4월 3일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1053</link>
+<description><![CDATA[ 굿모닝팝스 4월 3일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Fri, 03 Apr 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1053</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090402/gmp090403.mp3" type="audio/mpeg" length="33155242" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>Screen English 3월분 (3/17~31)</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1052</link>
+<description><![CDATA[ Screen English 3월 (17~31일) 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>스크린잉글리쉬</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Thu, 02 Apr 2009 18:26:17 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1052</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090402/1238664353.mp3" type="audio/mpeg" length="114991441" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>Screen English 3월분 (3/2~16)</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1051</link>
+<description><![CDATA[ <P>Screen English 3월 (2~16일) 방송분입니다.</P> ]]> </description>
+<category>카테고리</category>
+<category>스크린잉글리쉬</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Thu, 02 Apr 2009 18:23:43 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1051</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090402/1238664194.mp3" type="audio/mpeg" length="120297537" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 4월 2일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1050</link>
+<description><![CDATA[ 굿모닝팝스 4월 2일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Thu, 02 Apr 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1050</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090401/gmp090402.mp3" type="audio/mpeg" length="33348025" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 4월 1일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1049</link>
+<description><![CDATA[ 굿모닝팝스 4월 1일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Wed, 01 Apr 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1049</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090331/gmp090401.mp3" type="audio/mpeg" length="34883085" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 31일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1048</link>
+<description><![CDATA[ 굿모닝팝스 3월 31일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Tue, 31 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1048</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090330/gmp090331.mp3" type="audio/mpeg" length="34798448" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 30일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1047</link>
+<description><![CDATA[ <P>굿모닝팝스 3월 30일 방송분입니다.</P> ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Mon, 30 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1047</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090327/gmp090330.mp3" type="audio/mpeg" length="33634850" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 29일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1046</link>
+<description><![CDATA[ 굿모닝팝스 3월 29일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Sun, 29 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1046</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090327/gmp090329.mp3" type="audio/mpeg" length="35016310" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 28일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1045</link>
+<description><![CDATA[ 굿모닝팝스 3월 28일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Sat, 28 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1045</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090327/gmp090328.mp3" type="audio/mpeg" length="35171163" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 27일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1044</link>
+<description><![CDATA[ 굿모닝팝스 3월 27일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Fri, 27 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1044</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090326/gmp090327.mp3" type="audio/mpeg" length="35769890" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 26일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1043</link>
+<description><![CDATA[ 굿모닝팝스 3월 26일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Thu, 26 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1043</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090325/gmp090326.mp3" type="audio/mpeg" length="35315046" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 25일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1042</link>
+<description><![CDATA[ 굿모닝팝스 3월 25일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Wed, 25 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1042</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090324/gmp090325.mp3" type="audio/mpeg" length="34810674" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 24일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1041</link>
+<description><![CDATA[ 굿모닝팝스 3월 24일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Tue, 24 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1041</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090323/gmp090324.mp3" type="audio/mpeg" length="34702527" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 23일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1040</link>
+<description><![CDATA[ 굿모닝팝스 3월 23일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Mon, 23 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1040</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090320/gmp090323.mp3" type="audio/mpeg" length="34930732" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 22일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1039</link>
+<description><![CDATA[ <P>굿모닝팝스 3월 22일 방송분입니다.</P> ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Sun, 22 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1039</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090320/gmp090322.mp3" type="audio/mpeg" length="32387242" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 21일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1038</link>
+<description><![CDATA[ 굿모닝팝스 3월 21일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Sat, 21 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1038</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090320/gmp090321.mp3" type="audio/mpeg" length="35267085" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 20일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1037</link>
+<description><![CDATA[ 굿모닝팝스 3월 20일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Fri, 20 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1037</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090319/gmp090320.mp3" type="audio/mpeg" length="34786536" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 19일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1036</link>
+<description><![CDATA[ 굿모닝팝스 3월 19일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Thu, 19 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1036</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090318/gmp090319.mp3" type="audio/mpeg" length="34942331" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 18일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1035</link>
+<description><![CDATA[ 굿모닝팝스 3월 18일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Wed, 18 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1035</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090317/gmp090318.mp3" type="audio/mpeg" length="35446390" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+<item>
+<title>굿모닝팝스 3월 17일</title>
+<link>http://cast.danpod.com/gmp/index.php/post/1034</link>
+<description><![CDATA[ 굿모닝팝스 3월 17일 방송분입니다. ]]> </description>
+<category>카테고리</category>
+<category>gmp</category>
+<author>test@kbs.co.kr</author>
+<pubDate>Tue, 17 Mar 2009 07:40:00 +0900</pubDate>
+<guid>http://cast.danpod.com/gmp/index.php/post/1034</guid>
+<enclosure url="http://data.danpod.com/cast/gmp/media/20090316/gmp090317.mp3" type="audio/mpeg" length="35232290" />
+<tavipod:category>교육/강좌</tavipod:category>
+<tavipod:explicit>0</tavipod:explicit>
+</item>
+</channel>
+</rss>
