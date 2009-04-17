@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*
 """Beautiful Soup
 Elixir and Tonic
 "The Screen-Scraper's Friend"
@@ -1995,27 +1996,33 @@ class UnicodeDammit:
 import wsgiref.handlers
 from google.appengine.ext import webapp
 import urllib2
+#import file
 
 class MainHandler(webapp.RequestHandler):
     def get(self):
-        #html = "<br /><p>Para 1<p>Para 2<blockquote>Quote 1<blockquote>Quote 2"
-        #soup = BeautifulSoup(html)
-        #self.response.out.write(soup.prettify())
-        
         gmpurl = "http://tune.kbs.co.kr/program/episode.php?pgNo=1&ch=04&page=1"
-        page = urllib2.urlopen(gmpurl)
+        #page = urllib2.urlopen(gmpurl)
+        page = open('episode')
         content = page.read().decode("euc-kr")      
         content = content.replace("<<","&lt;&lt;")
         content = content.replace(">>","&gt;&gt;")
         self.response.headers['Content-Type'] = 'text/text'
         soup = BeautifulSoup(content)
-        for tr in soup('tr'):
-            self.response.out.write('########################')
-            self.response.out.write(tr)
+        
+        iteminfo = BeautifulSoup(str(soup('tr')[1]))
+        itemdesc = BeautifulSoup(str(soup('tr')[2]))
 
-        episodes = soup.findAll(id=re.compile('^episode.*'))
-        subjects = soup.findAll(id=re.compile('^episode.*'))
-        episode = soup.findAll(id=re.compile('^episode.*'))
+        for td in iteminfo('td'):
+            self.response.out.write(td.extract())
+
+        self.response.out.write(itemdesc.prettify())
+
+        #for tr in soup('tr'):
+        #    self.response.out.write('########################')
+
+        #episodes = soup.findAll(id=re.compile('^episode.*'))
+        #subjects = soup.findAll(id=re.compile('^episode.*'))
+        #episode = soup.findAll(id=re.compile('^episode.*'))
         #self.response.out.write(episode[0])
 
 def main():

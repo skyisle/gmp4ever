@@ -464,7 +464,7 @@ class GmpRSSHandler(webapp.RequestHandler):
         for i in range(15):
             d = today - datetime.timedelta(i);
 
-            _title = "굿모닝 팝스 %d월 %d일" % (d.month, d.day)
+            _title = "굿모닝팝스 %d월 %d일" % (d.month, d.day)
             _desc = "굿모닝팝스 %d월 %d일 방송분입니다." % (d.month, d.day)
             _pubDate = datetime.datetime(d.year,d.month,d.day,0,0,0,0)
             _guid = d.strftime("http://www.kbs.co.kr/radio/coolfm/gmp/?%Y%m%d")
