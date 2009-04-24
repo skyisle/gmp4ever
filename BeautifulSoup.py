@@ -1997,33 +1997,52 @@ import wsgiref.handlers
 from google.appengine.ext import webapp
 import urllib2
 #import file
+import logging
+import db
+
+class Post(db.Model):
+    title = db.StringProperty()
+    desc = db.TextProperty()
+    mp3size = db.IntegerProperty()
+    published = db.DateTimeProperty()
 
 class MainHandler(webapp.RequestHandler):
     def get(self):
         gmpurl = "http://tune.kbs.co.kr/program/episode.php?pgNo=1&ch=04&page=1"
         #page = urllib2.urlopen(gmpurl)
         page = open('episode')
-        content = page.read().decode("euc-kr")      
+        content = page.read().decode('euc-kr')
+
         content = content.replace("<<","&lt;&lt;")
         content = content.replace(">>","&gt;&gt;")
         self.response.headers['Content-Type'] = 'text/text'
-        soup = BeautifulSoup(content)
-        
-        iteminfo = BeautifulSoup(str(soup('tr')[1]))
-        itemdesc = BeautifulSoup(str(soup('tr')[2]))
+        soup = BeautifulSoup(content, fromEncoding="euc-kr")
+        untag = re.compile(u'<[^>]*>')
 
-        for td in iteminfo('td'):
-            self.response.out.write(td.extract())
+        for i, tr in enumerate( soup.findAll('tr') ):
+            if i == 0:
+                continue
 
-        self.response.out.write(itemdesc.prettify())
+            if (i - 1) % 2 == 0:
+                dnurl = dict(tr.contents[1].contents[1].attrs)['value']
+                today = tr.contents[3].string
+                name = tr.contents[5].contents[0].string
+                filesize = int(tr.contents[7].contents[0].string.replace('M',''))*1024*1024
 
-        #for tr in soup('tr'):
-        #    self.response.out.write('########################')
+                #logging.info(filesize)
+                #self.response.out.write(name)
+                #self.response.out.write('\n########################\n')
+            else:
+                desc = u''.join(map(unicode, tr.contents[1].findAll(name='dl'))).strip()
+                desc = untag.sub(u'', desc)
+                desc = desc.replace('&nbsp;','')
+                desc = desc.replace('&lt;','<')
+                desc = desc.replace('&gt;','>')
 
-        #episodes = soup.findAll(id=re.compile('^episode.*'))
-        #subjects = soup.findAll(id=re.compile('^episode.*'))
-        #episode = soup.findAll(id=re.compile('^episode.*'))
-        #self.response.out.write(episode[0])
+                desc = re.compile(u'^[\n\r\t ]*$\n', re.M).sub(u'',desc)
+                #desc = u''.join(map(unicode, tr.contents)).strip()
+                self.response.out.write(desc)
+
 
 def main():
     application = webapp.WSGIApplication([('/BeautifulSoup.*', MainHandler)],
